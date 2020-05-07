@@ -2,7 +2,7 @@ data "aws_region" "current" {}
 
 locals {
   secret_names = concat(var.secret_names, [
-    PASSWORD
+    "PASSWORD"
   ])
 
   environment = merge(var.environment,
