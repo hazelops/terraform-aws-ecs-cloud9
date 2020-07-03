@@ -20,6 +20,7 @@ locals {
       image = "${var.docker_image_name}:${var.docker_image_tag}",
       memoryReservation = 128,
       essential = true,
+      resourceRequirements = var.resource_requirements
 
       environment = [for k, v in local.environment : {name = k, value = v}]
       secrets = module.ssm.secrets

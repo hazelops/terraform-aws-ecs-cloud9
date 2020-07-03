@@ -48,3 +48,7 @@ variable "docker_container_port" {
 
 variable "ecs_network_mode" {
 }
+
+variable "resource_requirements" {
+  default = []
+}
