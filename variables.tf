@@ -52,3 +52,7 @@ variable "ecs_network_mode" {
 variable "resource_requirements" {
   default = []
 }
+
+variable "enabled" {
+  default = true
+}
